@@ -1,0 +1,15 @@
+#Commands
+- $ docker run hello-world - Tests if installation works.
+- $ docker pull busybox - The pull command fetches the busybox image from the Docker Registry and saves it to your system.
+- $ docker images - To see all images on your system.
+- $ docker run busybox echo "hello from busybox" - The Docker ran the command, and exited it.
+- $ docker ps - This command shows you all containers that are currently running.
+- $ docker ps -a - Shows all containers that we ran.
+- $ docker rm 305297d7a235 ff0a5c3750b9 - Clean up containers when you're done with them. In this case, '305297d7a235' is container's ID.
+
+#Terminology
+- Images: The blueprints of our application which form the basis of containers. We used docker pull to download the busybox image.
+- Containers: Created from Docker images, and run the actual application. We created a container when we use docker run.
+- Docker Daemon: The background service running on the host that manages building, running and distributing Docker containers.
+- Docker Client: The command line tool that allows the user to interact with the daemon.
+- Docker Hub: A registry of Docker Images.
